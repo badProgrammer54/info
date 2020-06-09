@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Inf System</title>
+</head>
+<body>
+    <div class="content">
+        <section class="section left">
+            <div class="left_logo">
+                <a class="logo_link" href="/index.html"><img class="logo_link-img" src="./img/logo.svg" alt=""></a>
+                <span class="logo_description">Информационная система</span>
+            </div>
+            <div class="left_user">
+                <a class="user_link" href="/profile"><img class="user_link-img" src="./img/user.png" alt=""></a>
+                <span class="user_name">Петров П. П.</span>
+                <button class="btn user_exit-btn" id="exit"><img src="./img/exit.svg" alt=""></button>
+            </div>
+            <nav class="left_nav">
+                <ul class="nav_ul">
+                    <a class="nav_ul-link" href=""><li class="nav_ul-li">Аптечные сети</li></a>
+                    <a class="nav_ul-link" href=""><li class="nav_ul-li">Курсы</li></a>
+                    <a class="nav_ul-link active" href=""><li class="nav_ul-li">Заявки</li></a>
+                    <a class="nav_ul-link" href=""><li class="nav_ul-li">Личный профиль</li></a>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="section rigth">
+            <div class="rigth_header">
+                <h1 class="rigth_header_h1">Заявки</h1>
+                <h2 class="rigth_type">Требуют подтверждения</h2>
+            </div>
+            <div class="rigth_main">
+                <div class="main_btn-wrapper">
+                    <button class="main-btn approve-btn">Согласовать</button>
+                </div>
+                <table class="main_table">
+                    <thead class="table_thead">
+                        <tr class="table_thead-tr">
+                            <th class="table_thead-th"><input class="checkbox th_checkbox" type="checkbox" id="th_checkbox"><label class="checkbox_label th_label" for="th_checkbox"></label></th>
+                            <th class="table_thead-th">Дата</th>
+                            <th class="table_thead-th">ФИО</th>
+                            <th class="table_thead-th">Телефон</th>
+                            <th class="table_thead-th">Наименование аптеки</th>
+                            <th class="table_thead-th">Адрес филиала</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_tbody">
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox1"><label class="checkbox_label td_label" for="td_checkbox1" ></label></td>
+                            <td class="table_tbody-td">31.10.2019</td>
+                            <td class="table_tbody-td">Маховиков Анатолий Викторович</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(303)555-0105">+7 (303) 555-0105</a></td>
+                            <td class="table_tbody-td">Аптека 1</td>
+                            <td title="Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1" class="table_tbody-td"><span>Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1</span> </td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox2"><label class="checkbox_label td_label" for="td_checkbox2"></label></td>
+                            <td class="table_tbody-td">30.10.2019</td>
+                            <td class="table_tbody-td">Андреева Марина Александровна</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(907)555-0101">+7 (907) 555-0101</a></td>
+                            <td class="table_tbody-td">Аптека 1</td>
+                            <td title="Волгоградская область, Волгоград, ул. Красная, д. 45" class="table_tbody-td">Волгоградская область, Волгоград, ул. Красная, д. 45</td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox3"><label class="checkbox_label td_label" for="td_checkbox3" ></label></td>
+                            <td class="table_tbody-td">29.10.2019</td>
+                            <td class="table_tbody-td">Паршукова Маргарита Юрьевна</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(217)555-0113">+7 (217) 555-0113</a></td>
+                            <td class="table_tbody-td">Аптека 2</td>
+                            <td title="Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 " class="table_tbody-td">Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 </td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox4"><label class="checkbox_label td_label" for="td_checkbox4" ></label></td>
+                            <td class="table_tbody-td">28.10.2019</td>
+                            <td class="table_tbody-td">Кузнецова Татьяна Геннадьевна</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(704)555-0127">+7 (704) 555-0127</a></td>
+                            <td class="table_tbody-td">Аптека 2</td>
+                            <td title="Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1" class="table_tbody-td">Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1</td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox5"><label class="checkbox_label td_label" for="td_checkbox5" ></label></td>
+                            <td class="table_tbody-td">27.10.2019</td>
+                            <td class="table_tbody-td">Ломакина Надежда Михайловна</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(207)555-0119">+7 (207) 555-0119</a></td>
+                            <td class="table_tbody-td">Аптека 3</td>
+                            <td title="Волгоградская область, Волгоград, ул. Красная, д. 45" class="table_tbody-td">Волгоградская область, Волгоград, ул. Красная, д. 45</td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox6"><label class="checkbox_label td_label" for="td_checkbox6" ></label></td>
+                            <td class="table_tbody-td">26.10.2019</td>
+                            <td class="table_tbody-td">Текутьев Александр Александрович</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(219)555-0114">+7 (219) 555-0114</a></td>
+                            <td class="table_tbody-td">Аптека 3</td>
+                            <td title="Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 " class="table_tbody-td">Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 </td>
+                        </tr>
+                        <tr class="table_tbody-tr">
+                            <td class="table_tbody-td"><input class="checkbox td_checkbox" type="checkbox" class="td_checkbox" id="td_checkbox7"><label class="checkbox_label td_label" for="td_checkbox7" ></label></td>
+                            <td class="table_tbody-td">25.10.2019</td>
+                            <td class="table_tbody-td">Попова Анастасия Владимировна</td>
+                            <td class="table_tbody-td"><a class="tbody_td-phone" href="tel:+7(229)555-0109">+7 (229) 555-0109</a></td>
+                            <td class="table_tbody-td">Аптека 2</td>
+                            <td title="Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1" class="table_tbody-td">Свердловская область, Екатеринбур, Центральный,  ул. Демидова, д 16/1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
