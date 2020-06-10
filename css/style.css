@@ -313,12 +313,12 @@ body.modal {
 .main_table {
     display: grid;
     margin-top: 40px;
-    grid-template-columns: 48px 142px minmax(300px, 319px) minmax(200px, 254px) minmax(0px, 254px) minmax(300px, 1fr);
+    grid-template-columns: 48px 142px minmax(300px, 319px) minmax(200px, 254px) minmax(0px, 254px) minmax(350px, 1fr);
 }
 
 @media (max-width: 1610px) {
     .main_table {
-        grid-template-columns: 48px 142px minmax(300px, 319px) minmax(200px, 254px) minmax(300px, 1fr);
+        grid-template-columns: 48px 142px minmax(300px, 319px) minmax(200px, 254px) minmax(350px, 1fr);
     }
 }
 
