@@ -318,7 +318,7 @@ body.modal {
 
 @media (max-width: 1610px) {
     .main_table {
-        grid-template-columns:  minmax(25px, 30px ) minmax(100px, 100px) minmax(280px, 350px) minmax(175px, 200px) minmax(250px, 1fr);
+        grid-template-columns: 48px 142px minmax(300px, 319px) minmax(200px, 254px) minmax(250px, 1fr);
     }
 }
 
