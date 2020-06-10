@@ -8,6 +8,27 @@
     <title>Inf System</title>
 </head>
 <body>
+    <div class="modal-outer" id="application_modal">
+        <div class="modal-inner">
+            <div class="close_button" ></div>
+            <h2 class="modal_header">Согласование</h2>
+            <form class="modal-content application" method="POST" action="" id="application" >
+                <label class="label application_label" for="application_select">Решение
+                    <select class="select application_label-select" form="application" name="application" id="application_select">
+                        <option value="0">Согласовать</option>
+                        <option value="1">Не согласовать</option>
+                    </select>
+                </label>
+                <label for="application_comment" class="label application_label">Комментарий
+                    <textarea name="comment" id="application_comment" form="application" class="textarea application_textarea" placeholder="При отрицательном решении по заявке заполните поле комментарий"></textarea>
+                </label>
+                <div class="modal_btn-wrapper">
+                    <button class="btn1 application_add" id="application_add">Добавить</button>
+                    <button class="btn2 application_close" id="application_close">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="content">
         <section class="section left">
             <div class="left_logo">
@@ -36,14 +57,14 @@
             </div>
             <div class="rigth_main">
                 <div class="main_btn-wrapper">
-                    <button class="main-btn approve-btn">Согласовать</button>
+                    <button class="btn1 approve-btn" id="approve-btn">Согласовать</button>
                 </div>
-                <table class="main_table">
+                <table class="main_table" id="main_table">
                     <thead class="table_thead">
                         <tr class="table_thead-tr">
                             <th class="table_thead-th"><input class="checkbox th_checkbox" type="checkbox" id="th_checkbox"><label class="checkbox_label th_label" for="th_checkbox"></label></th>
-                            <th class="table_thead-th">Дата</th>
-                            <th class="table_thead-th">ФИО</th>
+                            <th class="table_thead-th th-date">Дата</th>
+                            <th class="table_thead-th th-fio">ФИО</th>
                             <th class="table_thead-th">Телефон</th>
                             <th class="table_thead-th">Наименование аптеки</th>
                             <th class="table_thead-th">Адрес филиала</th>
